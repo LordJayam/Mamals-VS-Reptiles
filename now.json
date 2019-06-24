@@ -1,6 +1,6 @@
 {
-  "name": "Mamals-VS-Reptiles",
+  "type": "docker",
   "features": {
     "cloud": "v1"
-  }
+  },
 }
