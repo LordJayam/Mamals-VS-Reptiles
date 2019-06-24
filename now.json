@@ -1,6 +1,5 @@
-{
-  "type": "docker",
-  "features": {
-    "cloud": "v1"
-  },
+
+  "builds": [
+    { "src": "*.py", "use": "@now/python" }
+  ]
 }
