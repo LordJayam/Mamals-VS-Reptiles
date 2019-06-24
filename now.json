@@ -1,6 +1,6 @@
 {
   "name": "Mamals-VS-Reptiles",
   "builds": [
-    { "src": "app.py", "use": "@now/python" }
+    { "src": "app.py", "use": "@now/python","config": { "maxLambdaSize": "50mb" } }
   ]
 }
