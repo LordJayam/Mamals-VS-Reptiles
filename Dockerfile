@@ -8,7 +8,7 @@ RUN pip install torch_nightly -f https://download.pytorch.org/whl/nightly/cpu/to
 RUN pip install fastai
 
 # Install starlette and uvicorn
-RUN pip install starlette[full] uvicorn
+RUN pip install starlette uvicorn python-multipart aiohttp
 
 ADD app.py app.py
 ADD export.pkl export.pkl
