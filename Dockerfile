@@ -13,7 +13,7 @@ RUN pip install starlette uvicorn python-multipart aiohttp
 ADD app.py app.py
 ADD export.pkl export.pkl
 
-RUN python cougar.py
+RUN python app.py
 
 EXPOSE 8000
 
