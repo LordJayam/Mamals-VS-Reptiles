@@ -1,5 +1,5 @@
 {
-  "type": "docker",
+  "name": "Mamals-VS-Reptiles",
   "features": {
     "cloud": "v2"
   }
