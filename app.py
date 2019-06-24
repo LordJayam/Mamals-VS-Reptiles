@@ -18,7 +18,6 @@ classes = ["mamals", "reptiles"]
 async def init():
     return load_learner(path,"export.pkl")
 
-as_learn = init()
 
 @app.route('/')
 def index(request):
@@ -26,7 +25,7 @@ def index(request):
 
 @app.route('/submit',methods = ["POST"])
 async def submit(request):
-    learn = await as_learn()
+    learn = await init()
     data = await request.form()
     bytes = await data["file"].read()
     return pred_img_from_bytes(learn,bytes)
