@@ -1,3 +1,6 @@
 {
-  "name": "Mamals-VS-Reptiles"
+  "name": "Mamals-VS-Reptiles",
+  "builds": [
+    { "src": "app.py", "use": "@now/python" },
+  ]
 }
